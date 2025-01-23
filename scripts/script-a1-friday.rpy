@@ -12,18 +12,24 @@ with openeye
 window show
 
 "My morning alarm goes off, and I flail about uselessly for a while until I remember that I'd decided to give morning runs another shot."
+"Báo thức buổi sáng bắt đầu nổ chuông, tôi vùng vẫy một lúc trước khi bắt đầu ngồi dậy và chuẩn bị đi chạy vào buổi sáng."
 
-"I don't know if this was my greatest idea, but I'm determined to keep going."
+"Tôi chẳng biết liệu đây có phải là lựa chọn tốt nhất, nhưng tôi vẫn sẽ cố gắng tiếp tục thôi"
 
 "This is about my health, after all."
+"Đây là vì sức khỏe mà"
 
 "Sure, things haven't been great lately for me, but that hasn't made existence so intolerable that I'm not going to try everything I can to stay healthy."
+"Tuy dạo gần đây mọi thứ không ổn, nhưng điều đó chưa tới mức .... tôi sẽ thử mọi thứ tôi có thể để giữ cho mình khỏe mạnh"
 
 "Besides, it's all about asserting some kind of control over this thing, right?"
+"Bên cạnh đó, đây là cách để khẳng định quyền kiểm soát trước căn bệnh này mà phải không?"
 
 "If I can manage that, well, I can manage anything."
+"Nếu tôi có thể xử lý được điều đó thì mọi thứ sẽ ổn thôi"
 
 "At least that's what I keep telling myself."
+"Ít nhất thì tôi đã tự nhủ là vậy"
 
 scene bg school_track
 with locationskip
@@ -31,12 +37,16 @@ with locationskip
 play ambient sfx_emirunning fadein 0.3
 
 "Once again, it would appear that I'm not alone in my run."
+"Một lần nữa, có vẻ như không phải chỉ có mình tôi đi chạy."
 
 "Emi has apparently been here for some time."
+"Emi đã có mặt ở đường chạy rồi được một lúc rồi"
 
 "It looks like she's already worked up a good sweat."
+"Có vẻ như cô ấy đã chạy được kha khá rồi đấy"
 
 "Just when the hell does she come down here, anyway?"
+"Cô ấy đã bắt đầu xuống đây từ bao giờ vậy?"
 
 stop ambient fadeout 0.3
 
@@ -46,6 +56,7 @@ with charaenter
 play music music_emi fadein 0.5
 
 emi "Oh, it's you!"
+emi "À, là Hisao này!"
 
 show emi basic_closedgrin_gym
 with charachange
@@ -53,50 +64,63 @@ with charachange
 emi "I'm surprised to see you again!"
 
 hi "Why's that?"
+hi "Tại sao?"
 
 show emi basic_grin_gym
 with charachange
 
 emi "Well, not many people actually manage to come back for a second try."
+emi "Không phải ai cũng quay lại đây để tiếp tục chạy"
 
 show emi basic_annoyed_gym
 with charachange
 
 "She frowns, seemingly annoyed by a passing thought."
+"Cô ấy trông hơi cay mày, có vẻ đang cảm thấy khó chịu vì một suy nghĩ thoáng qua"
 
 emi "Like the rest of the track team, for instance."
+emi "Ví dụ như đội chạy bền chẳng hạn"
 
 emi "Still, it was only supposed to be on a volunteer basis, so it's not that big of a shock."
+emi "Mà đấy cũng chỉ là tình nguyện thôi nên cũng không quá bất ngờ"
 
 emi "And I guess it's pretty early in the morning…"
+emi "Và tớ nghĩ là bây giờ vẫn còn khá sớm"
 
 "A shrug, and suddenly it appears that she's forgotten what she was talking about."
-
+"Cô ấy nhún vai, trông có vẻ như đã quên mình định nói gì."
+ 
 show emi basic_happy_gym
 with charachange
 
 "The frown disappears entirely, and she seems to snap back to her previous train of thought."
 
 emi "So! Come on, then!"
+emi "Vậy bắt đầu nào!"
 
 hi "What?"
+hi "Cái gì?"
 
 show emi excited_proud_gym
 with charachange
 
 emi "You're here to run again, right?"
+emi "Cậu ở đây để chạy phải không?"
 
 hi "Well, yes."
+hi "Ừm"
 
 show emi basic_closedhappy_gym
 with charachange
 
 emi "So come on!"
+emi "Chuẩn bị thôi!"
 
 scene bg school_track_on
 with locationchange
 
 "I find myself suddenly grabbed and yanked onto the track."
+"Tôi đột ngột bị kéo ra đường chạy"
 
 play ambient sfx_emijogging fadein 0.3
 
@@ -104,16 +128,22 @@ scene bg school_track_running
 with locationchange
 
 "Things seem to be set on mirroring yesterday's run."
+""
 
 "That is, I seem to be struggling, while Emi moves with an effortlessness that I find enviable."
+""
 
 "It's incredibly bothersome, to be so easily worn out."
+"Khá khó chịu khi mình bị tụt sức dễ dàng đến vậy"
 
 "I know I should be patient, work toward things gradually, but…"
+"Dù biết là cần kiên trì và thực hiện từng chút một, nhưng..."
 
 "It's difficult to stay positive about this."
+"Thật không dễ dàng gì để giữ thái độ lạc quan về điều này được."
 
 "We round the track and start on our second lap."
+""
 
 play ambient sfx_emirunning
 
@@ -128,11 +158,14 @@ menu:
     with menueffect
 
     "Will I be able to do more?"
+    "Liệu tôi còn có thể tiếp tục chạy không?"
 
     "Go for it.":
+    "Tiếp tục nào."
         return m1
 
     "Take it easy.":
+    "Không cần vội"
         return m2
 
 label en_A25a:
@@ -142,16 +175,22 @@ label en_A25a:
 stop music fadeout 10.0
 
 "I let Emi go with her own pace, and she doesn't show mercy, pulling half a lap ahead of me in an instant."
+"Để Emi tiếp tục chạy vậy,.."
 
 "I don't blame her."
+"Không thể trách cô ấy được"
 
 "I mean, it's not as if I'm really putting up any sort of real fight out here, is it?"
+""
 
 "Instead, I'm just running at a steady pace, which is what I should be doing, right?"
+"Thay vào đó, tôi chỉ cần giữ tốc độ chạy ổn định là được mà phải không?"
 
 "There's no need to go pushing my limits at this stage of the game."
+"Không cần phải cố quá trong giai đoạn này làm gì."
 
 "God, is this even worth it?"
+"Lạy chúa, liệu nó có đáng không vậy?"
 
 scene bg school_track_on
 with locationchange
@@ -226,12 +265,16 @@ play ambient sfx_emipacing
 "Well, if this is the way we're going to play things…"
 
 "I increase my own pace as well."
+"Tôi cũng sẽ tăng tốc độ chạy của mình lên"
 
 "I can feel my lungs burning, and my legs are starting to question just what the hell I think I'm doing."
+"Phổi của tôi như lò lửa, đôi chân đã bắt đầu..."
 
 "Lactic acid screams in my muscles, but I close my ears."
+"Lactic acid đang gào thét trong các khối cơ nhưng tôi nhắm chặt mắt lại"
 
 "I can't let myself fall behind, because that would be a loss."
+"Không thể để mình bị bỏ lại phía sau được vì không muốn bị thua"
 
 "The rational voice in my head inquires mildly just when we started playing a game."
 
@@ -278,8 +321,10 @@ with charamoveinright
 stop ambient fadeout 0.1
 
 emi "What's wrong?"
+emi "Sao vậy?"
 
 hi "Nngh—Nothing, just…"
+hi "K-không có gì, chỉ là..."
 
 play sound sfx_heartfast
 show heartattack alpha
@@ -289,8 +334,10 @@ hide heartattack alpha
 with Dissolve (0.2)
 
 "Keep your breathing steady."
+"Giữ nhịp thở đều nào."
 
 "Calm down. Don't panic."
+"Bình tĩnh lại. Đừng sợ."
 
 play sound sfx_heartfast
 show heartattack alpha
@@ -300,6 +347,7 @@ hide heartattack alpha
 with Dissolve (0.2)
 
 "Don't panic."
+"Đừng sợ."
 
 show emi basic_shock_gym:
     parallel:
@@ -309,6 +357,7 @@ show emi basic_shock_gym:
 with None
 
 emi "Do you need me to get the nurse?"
+emi "Cậu có cần mìn gọi y tá không?"
 
 show black
 with shuteyefast
@@ -317,6 +366,7 @@ scene black
 with None
 
 "I close my eyes, shutting out the outside world."
+"Tôi nhắm mắt lại..."
 
 play sound sfx_heartfast
 show heartattack
@@ -335,11 +385,14 @@ hide heartattack
 with Dissolve (0.7)
 
 "My heart struggles to regain its rhythm."
+"Quả tim tôi đang vật lộn để có thể tiếp tục đập ổn định"
 
 "Slowly, the pain in my chest begins to subside."
+"Chậm lại, cơn đau ở ngực đang dần biến mất"
 
 "Soon it's gone like nothing happened."
-
+"Và sẽ sớm thôi, như chẳng có điều gì đã xảy ra."
+ 
 "It was… nothing? No, something happened there."
 
 play music music_rain fadein 2.0

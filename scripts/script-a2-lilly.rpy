@@ -19,12 +19,15 @@ window show
 play music music_dreamy fadein 2.0
 
 "It's the same alarm clock I had at home, one of the few remaining artifacts from my days before coming to Yamaku. I'd hoped that using it would help ease my transition into this new life."
+"Cái đồng hồ báo thức này là một trong số ít những thứ tôi mang theo từ nhà cũ trước khi chuyển đến Yamaku. Mong là khi sử dụng nó thì tôi sẽ cảm thấy cuộc sống mới này sẽ dễ chịu hơn" 
 
 "No such luck, though."
+"Sẽ chẳng có cái diễm phước đấy đâu."
 
 "Groggily dragging myself out of bed, I wipe the sleep out of my eyes, then reach over to my desk. I open a couple of the bottles of medication strewn across it, and swallow a few pills dry."
 
 "By now, the process is starting to become automatic - something I should be glad for, given their purpose."
+"Giờ đây, mọi thứ dần trở nên tự động - điều mà tôi nên biết ơn, ...."
 
 $ renpy.music.set_volume(0.5, 2.0, channel="music")
 
